@@ -9,22 +9,30 @@ export default function Home() {
       <Head>
         <title>Blog Home</title>
       </Head>
-      <h1>Hello, Mono</h1>
-      <Link href="/blog">
-        <button>Blog</button>
-      </Link>
+
+      <div className="text-center mt-3">
+        <h1 className="text-3xl ">Hello, Mr. Reader</h1>
+        <Link href="/blog">
+          <button>Blog</button>
+        </Link>
+        <br />
+        <br />
+        <Link href="/blog">
+          <button className="btn btn-primary mr-10">Blogs</button>
+        </Link>
+        <Link href="/posts">
+          <button className="btn btn-accent mx-auto">Posts</button>
+        </Link>
+      </div>
       <br />
       <br />
-      <button className="btn">Button</button>
-      <button className="btn btn-primary">Button</button>
-      <button className="btn btn-secondary">Button</button>
-      <button className="btn btn-accent">Button</button>
-      <button className="btn btn-ghost">Button</button>
-      <button className="btn btn-link">Button</button>
       <br />
-      <br />
-      <br />
-      <Image src="/marketing.jpg" width={400} height={400}></Image>
+      <Image
+        className="mx-auto"
+        src="/marketing.jpg"
+        width={400}
+        height={400}
+      ></Image>
     </div>
   );
 }

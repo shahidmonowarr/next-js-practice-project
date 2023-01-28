@@ -5,7 +5,7 @@ const Posts = ({posts}) => {
     console.log(posts);
     return (
         <div>
-            <h1 className="text-3xl">The number of posts - {posts.length}</h1>
+            <h1 className="text-3xl text-center font-black font-mono uppercase ">The number of posts - {posts.length}</h1>
             {
                 posts.map(post => <Post key={post.id} post={post}></Post>)
             }
