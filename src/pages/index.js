@@ -1,20 +1,22 @@
+import Banner from "@/Components/Banner/Banner";
+import Footer from "@/Components/Footer/Footer";
+import Header from "@/Components/Header/Header";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Blog Home</title>
       </Head>
 
-      <div className="text-center mt-3">
-        <h1 className="text-3xl ">Hello, Mr. Reader</h1>
-        <Link href="/blog">
-          <button>Blog</button>
-        </Link>
+      <div className="text-center">
+        <Header />
+        <Banner />
+        <h1 className="text-3xl font-bold">Hello, Mr. Reader</h1>
+          <button>Welcome to our Website</button>
         <br />
         <br />
         <Link href="/blog">
@@ -28,11 +30,12 @@ export default function Home() {
       <br />
       <br />
       <Image
-        className="mx-auto"
+        className="mx-auto mb-10"
         src="/marketing.jpg"
         width={400}
         height={400}
       ></Image>
+      <Footer />
     </div>
   );
 }
